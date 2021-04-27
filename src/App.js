@@ -141,65 +141,39 @@ class App extends React.Component {
                   {this.renderCircles(29, 36)}
                 </div>
 
-                <div className="flex grid-item-5">
-                  <div className="containerP1">
-                    <div className="divchildP1">
-                      <div >
-                        <Circle circleColor={this.state.player1Tokens[0] ? "#4646e8" : "black"} />
-                        <Circle circleColor={this.state.player1Tokens[1] ? "#4646e8" : "black"} />
-                      </div>
+                <Container />
+                <Container/>
 
-                      <div >
-                        <Circle circleColor={this.state.player1Tokens[2] ? "#4646e8" : "black"} />
-                        <Circle circleColor={this.state.player1Tokens[3] ? "#4646e8" : "black"} />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="containerP2">
-                    <div className="divchildP2">
-                      <div >
-                        <Circle circleColor={this.state.player2Tokens[0] ? "#c30c0c" : "black"} />
-                        <Circle circleColor={this.state.player2Tokens[1] ? "#c30c0c" : "black"} />
-                      </div>
-
-                      <div >
-                        <Circle circleColor={this.state.player2Tokens[2] ? "#c30c0c" : "black"} />
-                        <Circle circleColor={this.state.player2Tokens[3] ? "#c30c0c" : "black"} />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="numeroDee">
+                <div className="numeroDee">
 
 
-                    <span className="spanP1">{this.state.numDee}</span>
-                    <i className="fas fa-chess-knight logo "></i>
+                  <span className="spanP1">{this.state.numDee}</span>
+                  <i className="fas fa-chess-knight logo "></i>
 
-                    <span className="spanP2">{this.state.numDee2}</span>
-                    <p className="rainbow">Petit Chevaux</p>
-                    <button className={this.state.currentPlayer === 1 ? "b1" : "b2"} onClick={this.lancerDee}>Tirer dée du jouer {this.state.currentPlayer}</button>
-                  </div>
-
+                  <span className="spanP2">{this.state.numDee2}</span>
+                  <p className="rainbow">Petit Chevaux</p>
+                  <button className={this.state.currentPlayer === 1 ? "b1" : "b2"} onClick={this.lancerDee}>Tirer dée du jouer {this.state.currentPlayer}</button>
                 </div>
-
-                <div className="flex grid-item-6">
-                  {this.renderCircles(11, 18)}
-                </div>
-
-                {this.renderCircles(28, 28)}
-
-                <div className="flex grid-item-8">
-                  {this.renderCircles(20, 27)}
-                </div>
-
-                {this.renderCircles(19, 19)}
 
               </div>
 
+              <div className="flex grid-item-6">
+                {this.renderCircles(11, 18)}
+              </div>
+
+              {this.renderCircles(28, 28)}
+
+              <div className="flex grid-item-8">
+                {this.renderCircles(20, 27)}
+              </div>
+
+              {this.renderCircles(19, 19)}
+
             </div>
+
           </div>
         </div>
+        </div >
       )
     }
   }
