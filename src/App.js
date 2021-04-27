@@ -145,7 +145,7 @@ class App extends React.Component {
               </div>
 
               <div className="flex grid-item-5">
-                <div className="containerP1">
+                {/* <div className="containerP1">
                   <div className="divchildP1">
                     <div >
                       <Circle circleColor={this.state.player1Tokens[0] ? "#4646e8" : "black"} />
@@ -170,7 +170,7 @@ class App extends React.Component {
                       <Circle circleColor={this.state.player2Tokens[2] ? "#c30c0c" : "black"} />
                       <Circle circleColor={this.state.player2Tokens[3] ? "#c30c0c" : "black"} />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="numeroDee">
